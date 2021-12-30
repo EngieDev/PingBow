@@ -1,0 +1,38 @@
+- Load config file 
+    - Format - yaml?
+        - server
+            - ip
+            - port
+        - pings
+            - name
+            - ip/hostname
+            - timeout (default=3 second)
+            - colour (default=purple)
+            - period (default=5 second)
+
+
+- Ping function that returns the data
+
+- DB creation and setup tables etc
+    - sqlite?
+
+- Goroutines that repeatedly ping with the configured params
+    - write data to db
+
+- Server
+    - live - https://github.com/go-echarts/statsview
+    - historical data - https://github.com/go-echarts/go-echarts
+
+    - Merge them together? Not sure how feasible it is
+
+- Data retention?
+    - Don't need all the data, can remove old data after xx days etc
+    - Or reduce/average out - configuration file
+
+- Logo
+
+- README
+
+- Arch/Deb/RPM packages?
+
+- Optionally use /etc/ for configuration 
