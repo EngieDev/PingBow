@@ -1,0 +1,12 @@
+{
+    "serverIp": "0.0.0.0",
+    "serverPort": 8444,
+    "pingTargets": [
+        {
+            "name": "Google DNS",
+            "host": "8.8.8.8",
+            "colour": "purple",
+            "timeout": 3,
+            "period": 5
+        }]
+}
