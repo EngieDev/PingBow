@@ -1,16 +1,3 @@
-- Load config file 
-    - Format - yaml?
-        - server
-            - ip
-            - port
-        - pings
-            - name
-            - ip/hostname
-            - timeout (default=3 second)
-            - colour (default=purple)
-            - period (default=5 second)
-
-
 - Ping function that returns the data
 
 - DB creation and setup tables etc
