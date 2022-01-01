@@ -36,12 +36,13 @@ func main() {
 		checkError(errors.New("no ping targets configured"))
 	}
 
-	// Iterates over the PingTargets and spawns a pinger instance
+	// Iterates over the PingTargets and spawns a pinger instance for each
 	fmt.Println("Creating pinger instances")
 	for i := range Config.PingTargets {
 		go pinger(&Config.PingTargets[i])
 	}
 
+	// Sleeps to keep application open
 	time.Sleep(20 * time.Second)
 }
 
